@@ -54,7 +54,7 @@
         display: flex;
         align-items: center;
         gap: 20px;
-        .icon {
+        svg {
           width: 16px;
           height: 16px;
         }
@@ -126,15 +126,15 @@
     &:nth-child(3) {
       background-color: var(--color-purple);
     }
-    .tag {
+    .tags span {
       display: inline-block;
       margin: 0 5px;
-      padding: 4px 8px;
+      padding: 5px 10px;
       border-radius: 50px;
-      background-color: #fff;
-      color: #000;
+      color: #fff;
       font-family: Montserrat;
       font-size: 1.3rem;
+      font-weight: 400;
     }
     &:nth-child(2), &:nth-child(3) {
       display: flex;
@@ -142,6 +142,15 @@
       justify-content: space-between;
       font-weight: 700;
       cursor: pointer;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .About {
+    align-items: baseline;
+    .about-container {
+      flex-direction: column;
     }
   }
 }

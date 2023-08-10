@@ -9,7 +9,7 @@ export const ProjectData = [
   {
     id: 1,
     display: 'desktop',
-    title: 'NETFLIX',
+    title: 'TVING',
     skills: ["css", "react", "redux", "styledcomponents"],
     desc: ['미디어쿼리를 이용한 반응형/적응형 구현', '지역 기반 마커 클러스터링 구현'],
     image: `${netflix}`

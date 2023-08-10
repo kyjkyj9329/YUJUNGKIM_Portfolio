@@ -32,3 +32,38 @@ Body {
 @import "./sass/About.scss";
 @import "./sass/Project.scss";
 @import "./sass/Contact.scss";
+
+@import "./sass/mixin.scss";
+@media all and (max-width: 720px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+.html {
+  background-color: #e34c26;
+}
+.css {
+  background-color: #264de4;
+}
+.javascript {
+  background-color: #ffd43b;
+}
+.sass {
+  background-color: #cc6699;
+}
+.react {
+  background-color: #61dbfb;
+}
+.redux {
+  background-color: #764abc;
+}
+.json {
+  background-color: #333;
+}
+.typescript {
+  background-color: #007acc;
+}
+.styledcomponents {
+  background: linear-gradient(90deg, rgba(219,112,147,1) 0%, rgba(243,182,97,1) 100%);
+}

@@ -99,44 +99,19 @@
                 margin-left: 7px;
                 padding: 4px;
                 border-radius: 50%;
-                background-color: var(--color-mint);
                 path {
                   color: #fff;
                 }
               }
-              .html {
-                background-color: #e34c26;
-              }
-              .css {
-                background-color: #264de4;
-              }
-              .javascript {
-                background-color: #ffd43b;
-              }
-              .sass {
-                background-color: #cc6699;
-              }
-              .react {
-                background-color: #61dbfb;
-              }
-              .redux {
-                background-color: #764abc;
-              }
-              .json {
-                background-color: #333;
-              }
-              .typescript {
-                background-color: #007acc;
-              }
-              .styledcomponents {
-                background: rgb(219,112,147);
-                background: linear-gradient(90deg, rgba(219,112,147,1) 0%, rgba(243,182,97,1) 100%);
-              }
             }
           }
-          span {
-            margin-bottom: 5px;
-            font-size: 1.3rem;
+          .item-desc {
+            display: flex;
+            flex-direction: column;
+            span {
+              margin-bottom: 5px;
+              font-size: 1.3rem;
+            }
           }
         }
       }

@@ -5,34 +5,23 @@ import image1 from '../assets/img/image1.jpeg'
 import { BsInstagram, BsGithub, BsEnvelope, BsFileEarmarkText } from 'react-icons/bs';
 import { SiVelog } from 'react-icons/si';
 import { BiSolidQuoteLeft, BiSolidQuoteRight } from 'react-icons/bi';
-
-const ProfileContent = ({ data }) => {
-  <div className='profile-content'>
-    {data.icon}
-    <a href={data.url}>
-      {data.name}
-    </a>
-  </div>
-}
+import { skillIcons } from '../assets/data/skillIcons';
 
 export const About = () => {
   return (
     <div className='About'>
       <div className='about-container'>
         <div className='about-profile'>
-          <div className='profile-content'>
           <img src={image1} width={100}/>
-          {ContactData.map((data) => 
-            <ProfileContent data={data} key={data.id} />
-          )}
-            <div>
-              <BsGithub className='icon' />
-              <a href={ContactData[2].url}>{ContactData[2].name}</a>
-            </div>
-            <div>
-              <BsEnvelope className='icon' />
-              <a href={`mailto:${ContactData[0].url}`}>{ContactData[0].name}</a>
-            </div>
+          <div className='profile-content'>
+            {ContactData.map((data) => 
+              <div>
+                {data.icon}
+                <a href={data.url}>
+                  {data.name}
+                </a>
+              </div>
+            )}
           </div>
         </div>
         <div className='about-main'>
@@ -53,16 +42,11 @@ export const About = () => {
         </div>
         <div className='about-aside'>
           <div className='card'>
-            <span>SKILLS</span>
-            <div>
-              <span className='tag'>HTML5</span>
-              <span className='tag'>CSS3</span>
-              <br />
-              <span className='tag'>SCSS</span>
-              <span className='tag'>JavaScript</span>
-              <span className='tag'>TypeScript</span>
-              <span className='tag'>React</span>
-              <span className='tag'>Node.js</span>
+            <div>SKILLS</div>
+            <div className='tags'>
+              {skillIcons.map((icon) => 
+                <span className={icon.name}>{icon.name}</span>
+              )}
             </div>
           </div>
           <div className='card'>

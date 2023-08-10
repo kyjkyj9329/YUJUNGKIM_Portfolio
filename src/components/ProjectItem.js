@@ -31,7 +31,11 @@ return (
             }
           </div>
         </div>
-        <span>{item.desc}</span>
+        <div className='item-desc'>
+          {item.desc.map((it) => 
+            <span>{it}</span>
+          )}
+        </div>
       </div>
     </div>
   )
