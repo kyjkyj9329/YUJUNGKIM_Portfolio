@@ -1,0 +1,31 @@
+/* Font Family */
+/* 한국어 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* 영어 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Montserrat Alternates', sans-serif; */
+
+:root {
+  /* === Font Family === */
+  --primary-kr: 'Noto Sans KR', sans-serif;
+  /* --primary-en: 'Poppins', sans-serif; */
+
+  /* === Color === */
+  --color-gray-3: #333;
+  --color-gray-6: #666;
+  --color-gray-9: #999;
+
+  --color-yellow: #FFD255;
+  --color-mint: #ACD2B9;
+  --color-pink: #F7B9AD;
+  --color-purple: #CFB8D5;
+
+  /* === Background Color === */
+  --bg-color-white: #fff;
+  --bg-color-gray: #F1F2F5;
+}

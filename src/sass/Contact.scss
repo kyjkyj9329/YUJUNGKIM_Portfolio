@@ -1,0 +1,114 @@
+.Contact {
+  width: calc(100% - 50px);
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  z-index: 5;
+  border-radius: 20px 0 0 20px;
+  box-shadow: 4px 12px 30px 6px rgba(106, 36, 36, 0.1);
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .contact-container {
+    // border: 2px solid red;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10vh 50px;
+    display: flex;
+    .contact-main {
+      // border: 2px solid blue;
+      flex: 1;
+      margin: 5rem;
+      h1 {
+        margin-bottom: 1rem;
+        font-size: 2.4rem;
+        font-weight: 700;
+      }
+      span {
+        font-size: 1.6rem;
+      }
+      .contact-list {
+        margin: 5rem;
+        .ContactItem {
+          margin: 6rem 0;
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          img {
+            width: 6rem;
+            height: 6rem;
+          }
+          .speech-bubble {
+            height: 80px;
+            line-height: 80px;
+            padding: 0 20px;
+            font-family: Poppins;
+            font-size: 1.4rem;
+            
+            position: relative;
+            background: #eee;
+            border-radius: 20px;
+          }
+          .speech-bubble:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 1em;
+            border: 25px solid transparent;
+            border-right-color: #eee;
+            border-left: 0;
+            border-top: 0;
+            margin-top: -12.5px;
+            margin-left: -25px;
+          }
+        }
+      }
+    }
+    .contact-form {
+      // border: 2px solid blue;
+
+      flex: 1;
+      margin: 5rem;
+      form {
+        width: 50rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input {
+          flex: 1;
+          width: 100%;
+          border: none;
+          border-radius: 30px;
+          background: #FEFEFE;
+          box-shadow: 4px 4px 30px 6px rgba(0, 0, 0, 0.10);
+          &:nth-child(3) {
+            flex: 5;
+          }
+        }
+        input::placeholder {
+          padding-left: 10px;
+          color: #AAA;
+          font-family: Montserrat;
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+        button {
+          flex: 1;
+          border: none;
+          border-radius: 30px;
+          color: #fff;
+          background: #AAA;
+          box-shadow: 4px 4px 30px 6px rgba(0, 0, 0, 0.10);
+          color: #FFF;
+          font-family: Montserrat;
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
