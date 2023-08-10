@@ -1,7 +1,7 @@
 import { BsInstagram, BsGithub, BsEnvelope, BsFileEarmarkText } from 'react-icons/bs';
 import emailImg from '../img/contact_icon-email.svg';
-import InstaImg from '../img/contact_icon-instagram.svg';
-import GithubImg from '../img/contact_icon-github.svg';
+import InstaImg from '../img/pngwing(2).com.png';
+import GithubImg from '../img/pngwing.com3.png';
 
 const ContactData = [
   {
