@@ -28,12 +28,12 @@ Body {
   display: flex;
 }
 
-@import "./sass/home.scss";
-@import "./sass/About.scss";
-@import "./sass/Project.scss";
-@import "./sass/Contact.scss";
+@import "/src/sass/Home.scss";
+@import "/src/sass/About.scss";
+@import "/src/sass/Project.scss";
+@import "/src/sass/Contact.scss";
 
-@import "./sass/mixin.scss";
+@import "/src/sass/mixin.scss";
 @media all and (max-width: 720px) {
   html {
     font-size: 55%;
