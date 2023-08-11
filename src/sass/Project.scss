@@ -52,7 +52,6 @@
         position: relative;
         // border: 1px solid red;
         display: inline-block;
-        width: 50%;
         padding: 20px;
         position: relative;
         a {
@@ -119,3 +118,16 @@
   }
 }
 
+@media all and (max-width: 720px) {
+  .Project {
+    .project-main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .project-item {
+        width: 100% !important;
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@ const ContactItem = ({ item }) => {
         <img src={item.image} />
       </a>
       <div className='speech-bubble'>
-        {item.url}
+        {item.url.replace('mailto:', '')}
       </div>
     </div>
   )

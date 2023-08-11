@@ -11,34 +11,36 @@ export const About = () => {
   return (
     <div className='About'>
       <div className='about-container'>
-        <div className='about-profile'>
-          <img src={image1} width={100}/>
-          <div className='profile-content'>
-            {ContactData.map((data) => 
-              <div>
-                {data.icon}
-                <a href={data.url}>
-                  {data.name}
-                </a>
-              </div>
-            )}
-          </div>
-        </div>
         <div className='about-main'>
-          <BiSolidQuoteLeft className='quoteIcon' />
-          <div className='main-content'>
-            <span>
-              <span className='text-highlight-yellow'>창의적</span>이고 <span className='text-highlight-yellow'>꼼꼼한</span> 프론트엔드 개발자 김유정 입니다.
-            </span>
-            <span>프론트엔드에만 국한되지 않고 백엔드에도 관심을 가지며,</span>
-            <span>
-              새로운 것을 배우고 발전하는 것에 흥미를 느낍니다.
-            </span>
-            <span>
-              <span className='text-highlight-pinkGradient'>열정</span>으로 가득한 저의 앞으로의 <span className='text-highlight-pinkGradient'>성장</span>을 기대해주세요!
-            </span>
+          <div className='about-profile'>
+            <img src={image1} width={100}/>
+            <div className='profile-content'>
+              {ContactData.map((data) => 
+                <div>
+                  {data.icon}
+                  <a href={data.url}>
+                    {data.name}
+                  </a>
+                </div>
+              )}
+            </div>
           </div>
-          <BiSolidQuoteRight className='quoteIcon' />
+          <div className='about-desc'>
+            <BiSolidQuoteLeft className='quoteIcon' />
+            <div className='desc-content'>
+              <span>
+                <span className='text-highlight-yellow'>창의적</span>이고 <span className='text-highlight-yellow'>꼼꼼한</span> 프론트엔드 개발자 김유정 입니다.
+              </span>
+              <span>프론트엔드에만 국한되지 않고 백엔드에도 관심을 가지며,</span>
+              <span>
+                새로운 것을 배우고 발전하는 것에 흥미를 느낍니다.
+              </span>
+              <span>
+                <span className='text-highlight-pinkGradient'>열정</span>으로 가득한 저의 앞으로의 <span className='text-highlight-pinkGradient'>성장</span>을 기대해주세요!
+              </span>
+            </div>
+            <BiSolidQuoteRight className='quoteIcon' />
+          </div>
         </div>
         <div className='about-aside'>
           <div className='card'>
@@ -49,13 +51,15 @@ export const About = () => {
               )}
             </div>
           </div>
-          <div className='card'>
-            <SiVelog />
-            <span>VELOG</span>
-          </div>
-          <div className='card'>
-            <BsFileEarmarkText />
-            <span>RESUME</span>
+          <div>
+            <div className='card'>
+              <SiVelog />
+              <span>VELOG</span>
+            </div>
+            <div className='card'>
+              <BsFileEarmarkText />
+              <span>RESUME</span>
+            </div>
           </div>
         </div>
       </div>
