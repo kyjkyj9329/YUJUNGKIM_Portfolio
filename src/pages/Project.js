@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useLocation, useSearchParams } from "react-router-dom"
 
 const projectNav = [
-  { display: "all", selected: false, value: "ALL" },
+  { display: "all", selected: true, value: "ALL" },
   { display: "desktop", selected: false, value: "DESKTOP"  },
   { display: "mobile", selected: false, value: "MOBILE"  }
 ]
@@ -45,7 +45,7 @@ export const Project = () => {
               <Link
                 to={`/project?display=${list.display}`}
                 key={list.value}
-                style={list.selected ? { borderBottom: "4px solid #333" } : {}}
+                style={list.selected ? { borderBottom: "3px solid #333" } : {}}
                 onClick={() => {
                   clickProjectNav(list.value);
                 }}

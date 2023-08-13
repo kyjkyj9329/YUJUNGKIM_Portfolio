@@ -1,8 +1,9 @@
+@import "/src/sass/variables";
 .Contact {
-  width: calc(100% - 50px);
-  height: calc(100vh - 50px);
+  width: calc(100% - $nav-width);
+  // height: calc(100vh - 50px);
   display: flex;
-  align-items: center;
+  // align-items: center;
   background-color: #fff;
   z-index: 5;
   border-radius: 20px 0 0 20px;
@@ -15,9 +16,9 @@
     // border: 2px solid red;
     width: 1200px;
     margin: 0 auto;
-    // padding: 10vh 50px;
+    padding: 10vh 50px;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     .contact-main {
       width: 50%;
       padding: 5rem;
@@ -36,7 +37,7 @@
           margin: 6rem 0;
           display: flex;
           align-items: center;
-          gap: 40px;
+          gap: 20px;
           img {
             width: 6rem;
             height: 6rem;
@@ -130,22 +131,45 @@
   .Contact {
     .contact-container {
       // border: 2px solid red;
-      align-items: center;
+      padding: 0;
       flex-direction: column;
-      height: 90vh;
-      // margin-top: 10rem;
       .contact-main, .contact-form {
-        width: 80%;
-        padding: 0;
+        width: 75vw;
+        margin: 0 auto;
+        padding: 5rem 0;
       }
       .contact-main {
-        .contact-intro {
-          // border: 1px solid green;
-          // display: flex;
-          // align-items: center;
-          // justify-content: space-between;
+        .ContactItem:last-child {
+          margin: 0;
         }
-        
+      }
+      .contact-form {
+
+      }
+    }
+  }
+}
+
+@media all and (max-width: 720px) {
+  .Contact {
+    width: calc(100% - $nav-width-mobile);
+    .contact-container {
+      .contact-main {
+        padding-bottom: 3rem;
+        .contact-list {
+          margin-top: 3rem;
+          display: flex;
+          justify-content: space-evenly;
+          .ContactItem {
+            margin: 0;
+            .speech-bubble {
+              display: none;
+            }
+          } 
+        }
+      }
+      .contact-form {
+        padding: 0;
       }
     }
   }

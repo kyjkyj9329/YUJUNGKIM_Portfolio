@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Navigation.css';
 import { Link } from 'react-router-dom';
 
 // const navIndexInit = [
@@ -24,16 +23,16 @@ export const Navigation = () => {
   // const [navIndex, setNavIndex] = useState(navIndexInit[0]);
   return (
     <div className='Navigation'>
-      <Link to={'/'} className='index'>
+      <Link to={'/'}>
         <span>01</span>
       </Link>
-      <Link to={'/about'} className='index'>
+      <Link to={'/about'}>
         <span>02</span>
       </Link>
-      <Link to={'/project'} className='index'>
+      <Link to={'/project'}>
         <span>03</span>
       </Link>
-      <Link to={'/contact'} className='index'>
+      <Link to={'/contact'}>
         <span>04</span>
       </Link>
     </div>

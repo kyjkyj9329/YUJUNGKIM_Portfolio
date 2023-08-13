@@ -1,5 +1,6 @@
+@import "/src/sass/variables";
 .About {
-  width: calc(100% - 50px);
+  width: calc(100% - $nav-width);
   background-color: #fff;
   z-index: 5;
   border-radius: 20px 0 0 20px;
@@ -94,59 +95,52 @@
     flex-direction: column;
     // justify-content: space-between;
     gap: 3rem;
+    .card {
+      height: 20rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      border-radius: 30px;
+      box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.10);
+      color: #666;
+      font-family: Poppins;
+      font-size: 2.5rem;
+      font-weight: 600;
+      .tags span {
+        display: inline-block;
+        margin: 0 5px;
+        padding: 5px 10px;
+        border-radius: 50px;
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+    }
     & > div {
       flex: 2;
     }
     & > div:last-child {
+      height: 20rem;
       display: flex;
       flex-direction: column;
       gap: 3rem;
       .card {
+        // height: 9rem;
+        padding: 0;
         flex-direction: row;
+        align-items: center;
         justify-content: space-around;
       }
     }
   }
-  .card {
-    /* height: 18rem; */
-    padding: 5rem;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 0.10);
-    color: #fff;
-    font-family: Poppins;
-    font-size: 2.5rem;
-    font-weight: 600;
-    &:nth-child(1) {
-      background-color: var(--color-pink);
-    }
-    &:nth-child(2) {
-      background-color: var(--color-mint);
-    }
-    &:nth-child(3) {
-      background-color: var(--color-purple);
-    }
-    .tags span {
-      display: inline-block;
-      margin: 0 5px;
-      padding: 5px 10px;
-      border-radius: 50px;
-      color: #fff;
-      font-family: Montserrat;
-      font-size: 1.3rem;
-      font-weight: 400;
-    }
-  }
 }
 
-@media all and (min-width: 720px) and (max-width: 1200px) {
+@media all and (max-width: 1200px) {
   .About {
-    align-items: baseline;
     .about-container {
       flex-direction: column;
-      height: 80vh;
-      margin: 10rem 3rem;
+      margin: 3rem;
       padding: 0;
       .about-main {
         margin-bottom: 3rem;
@@ -164,37 +158,76 @@
           }
         }
         .card {
-          height: 100%;
-          padding: 3rem;
+          // height: 100%;
+          // padding: 3rem;
         }
       }
     }
   }
 }
 
-@media all and (min-width: 335px) and (max-width: 720px) {
+@media all and (max-width: 720px) {
   .About {
+    width: calc(100% - $nav-width-mobile);
     .about-container {
-      padding: 5rem;
       flex-direction: column;
       .about-main {
         flex-direction: column;
+        .about-profile {
+          .profile-content {
+            margin: 0 2rem;
+          }
+        }
         .about-desc {
           margin: 5rem;
         }
       }
       .about-aside {
+        flex-direction: column;
         & > div:last-child {
           // border: 2px solid red;
           flex-direction: row;
           justify-content: space-between;
           gap: 3rem;
           .card {
-            display: inline-block;
-            width: 100%;
+            height: 10rem;
+            // line-height: 10rem;
+            // display: inline-block;
+            width: calc((100% - 3rem) / 2);
+            justify-content: center;
+            gap: 1rem;
+            // padding: 3rem;
+            svg {
+              font-size: 2rem;
+            };
             span {
-              display: block;
+              // display: block;
+              font-size: 0.8em;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 335px) {
+  .About {
+    .about-container {
+      .about-main {
+        .about-profile .profile-content {
+          margin: 0 1rem;
+        }
+        .about-desc {
+          margin: 1rem;
+        }
+      }
+      .about-aside {
+        & > div:last-child {
+          .card {
+            // padding: 2rem;
+            gap: 0;
+            font-size: 2rem;
           }
         }
       }

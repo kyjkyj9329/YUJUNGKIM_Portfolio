@@ -1,6 +1,7 @@
+@import "/src/sass/variables";
 .Home {
   /* border: 3px solid red; */
-  width: calc(100% - 50px);
+  width: calc(100% - $nav-width);
   background-color: #fff;
   z-index: 5;
   border-radius: 20px 0 0 20px;
@@ -41,6 +42,58 @@
     svg {
       width: 3rem;
       height: 3rem;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .Home {
+    h1 {
+      font-size: 6rem;
+    }
+    .sub {
+      margin: 0;
+      flex-direction: column;
+      align-items: baseline;
+      gap: 0;
+      span {
+        font-size: 1.5rem;
+      }
+    }
+    .sns {
+      margin: 0;
+      gap: 2rem;
+      svg {
+        width: 2rem;
+      }
+    } 
+  }
+}
+
+@media all and (max-width: 720px) {
+  .Home {
+    width: calc(100% - $nav-width-mobile);
+    .home-container {
+      padding: 2rem;
+      h1 {
+        font-size: 3.5rem;
+      }
+      .sub {
+        margin: 0;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 0;
+        span {
+          font-size: 1.3rem;
+        }
+      }
+      .sns {
+        margin: 0;
+        gap: 2rem;
+        svg {
+          width: 2rem;
+        }
+      } 
     }
   }
 }

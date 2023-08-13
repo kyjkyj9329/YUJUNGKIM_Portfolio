@@ -26,12 +26,14 @@ Body {
   background-color: #fff;
   border-radius: 20px;
   display: flex;
+  justify-content: space-between
 }
 
 @import "/src/sass/Home.scss";
 @import "/src/sass/About.scss";
 @import "/src/sass/Project.scss";
 @import "/src/sass/Contact.scss";
+@import "/src/sass/Navigation.scss";
 
 @import "/src/sass/mixin.scss";
 @media all and (max-width: 720px) {
