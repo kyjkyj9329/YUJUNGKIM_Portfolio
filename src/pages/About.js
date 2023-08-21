@@ -16,7 +16,7 @@ export const About = () => {
             <img src={image1} width={100}/>
             <div className='profile-content'>
               {ContactData.map((data) => 
-                <div>
+                <div key={data.id}>
                   {data.icon}
                   <a href={data.url}>
                     {data.name}
@@ -47,19 +47,19 @@ export const About = () => {
             <div>SKILLS</div>
             <div className='tags'>
               {skillIcons.map((icon) => 
-                <span className={icon.name}>{icon.name}</span>
+                <span key={icon.id} className={icon.name}>{icon.name}</span>
               )}
             </div>
           </div>
           <div>
-            <div className='card'>
+            <a href='https://velog.io/@kyjkyj9329' className='card' target='blank' >
               <SiVelog />
               <span>VELOG</span>
-            </div>
-            <div className='card'>
+            </a>
+            <a href='https://drive.google.com/file/d/1yP6h1IqMdD6vYTTGbDjbraD_tKUgMYDl/view?usp=drive_link' className='card' target='blank'>
               <BsFileEarmarkText />
               <span>RESUME</span>
-            </div>
+            </a>
           </div>
         </div>
       </div>

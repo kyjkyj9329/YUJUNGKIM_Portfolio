@@ -32,17 +32,17 @@ export const skillIcons = [
     icon: <SiRedux className='redux' />
   },
   {
-    id: 6,
+    id: 7,
     name: 'json',
     icon: <SiJson className='json' />
   },
   {
-    id: 6,
+    id: 8,
     name: 'typescript',
     icon: <SiTypescript className='typescript' />
   },
   {
-    id: 7,
+    id: 9,
     name: 'styledcomponents',
     icon: <SiStyledcomponents className='styledcomponents' />
   },

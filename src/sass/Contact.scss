@@ -16,12 +16,15 @@
     // border: 2px solid red;
     width: 1200px;
     margin: 0 auto;
-    padding: 10vh 50px;
+    padding: 10vh 25px;
     display: flex;
-    // justify-content: center;
+    justify-content: center;
     .contact-main {
       width: 50%;
       padding: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       .contact-intro {
         h1 {
           margin-bottom: 1rem;
@@ -73,6 +76,9 @@
       // border: 2px solid blue;
       width: 50%;
       padding: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       form {
         height: 50rem;
         gap: 8rem;
@@ -131,7 +137,9 @@
   .Contact {
     .contact-container {
       // border: 2px solid red;
-      padding: 0;
+      height: 100vh;
+      padding: 0 5rem;
+      padding-top: 10vh;
       flex-direction: column;
       .contact-main, .contact-form {
         width: 75vw;

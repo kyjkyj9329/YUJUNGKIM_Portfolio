@@ -32,8 +32,8 @@ return (
           </div>
         </div>
         <div className='item-desc'>
-          {item.desc.map((it) => 
-            <span>{it}</span>
+          {item.desc.map((it, index) => 
+            <span key={index}>{it}</span>
           )}
         </div>
       </div>
