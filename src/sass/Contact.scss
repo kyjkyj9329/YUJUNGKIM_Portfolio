@@ -48,7 +48,7 @@
           .speech-bubble {
             height: 80px;
             line-height: 80px;
-            padding: 0 20px;
+            padding: 0 15px;
             font-family: Poppins;
             font-size: 1.4rem;
             
@@ -139,7 +139,7 @@
       // border: 2px solid red;
       height: 100vh;
       padding: 0 5rem;
-      padding-top: 10vh;
+      // padding-top: 10vh;
       flex-direction: column;
       .contact-main, .contact-form {
         width: 75vw;
@@ -150,9 +150,6 @@
         .ContactItem:last-child {
           margin: 0;
         }
-      }
-      .contact-form {
-
       }
     }
   }

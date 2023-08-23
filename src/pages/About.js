@@ -52,11 +52,11 @@ export const About = () => {
             </div>
           </div>
           <div>
-            <a href='https://velog.io/@kyjkyj9329' className='card' target='blank' >
+            <a href='https://velog.io/@kyjkyj9329' className='card velog' target='blank' >
               <SiVelog />
               <span>VELOG</span>
             </a>
-            <a href='https://drive.google.com/file/d/1yP6h1IqMdD6vYTTGbDjbraD_tKUgMYDl/view?usp=drive_link' className='card' target='blank'>
+            <a href='https://drive.google.com/file/d/1yP6h1IqMdD6vYTTGbDjbraD_tKUgMYDl/view?usp=drive_link' className='card resume' target='blank'>
               <BsFileEarmarkText />
               <span>RESUME</span>
             </a>

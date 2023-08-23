@@ -56,10 +56,12 @@
         position: relative;
         a {
           // border: 3px solid green;
-          transition: all 2s;
+          transition: all .2s;
           svg {
-            width: 50px;
-            height: 50px;
+            width: 4vw;
+            max-width: 50px;
+            height: 4vw;
+            max-height: 50px;
             color: #fff;
             position: absolute;
             right: 50px;
@@ -134,6 +136,10 @@
         .project-item {
           width: 100%;
           padding: 0;
+          a svg {
+            right: 30px;
+            top: 30px;
+          }
           .item-content {
             .item-title {
               .skills svg {

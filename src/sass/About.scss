@@ -1,6 +1,8 @@
 @import "/src/sass/variables";
 .About {
   width: calc(100% - $nav-width);
+  display: flex;
+  align-items: center;
   background-color: #fff;
   z-index: 5;
   border-radius: 20px 0 0 20px;
@@ -13,7 +15,7 @@
     /* border: 3px solid red; */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20vh 50px;
+    padding: 5rem;
     display: flex;
   }
   .about-main {
@@ -31,7 +33,7 @@
       }
       .profile-content {
         /* border: 1px solid green; */
-        margin: 10px 70px;
+        margin: 5rem 7rem;
         padding: 40px 0;
         display: flex;
         flex-direction: column;
@@ -49,6 +51,10 @@
             color: #000;
             font-family: Montserrat;
             font-size: 1.5rem;
+            transition: .2s;
+            &:hover {
+              opacity: .8;
+            }
           }
         }
       }
@@ -106,6 +112,7 @@
       font-family: Poppins;
       font-size: 2.5rem;
       font-weight: 600;
+      transition: .25s;
       .tags span {
         display: inline-block;
         margin: 0 5px;
@@ -116,6 +123,14 @@
         font-size: 1.3rem;
         font-weight: 400;
       }
+    }
+    .velog:hover {
+      color: #20C997;
+      transform: scale(1.05);
+    }
+    .resume:hover {
+      color: #FF5F1F;
+      transform: scale(1.05);
     }
     & > div {
       flex: 2;
@@ -130,7 +145,8 @@
         padding: 0;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 1rem;
       }
     }
   }
@@ -169,13 +185,13 @@
 @media all and (max-width: 720px) {
   .About {
     width: calc(100% - $nav-width-mobile);
+    display: block;
     .about-container {
-      flex-direction: column;
       .about-main {
         flex-direction: column;
         .about-profile {
           .profile-content {
-            margin: 0 2rem;
+            margin: 0 5rem;
           }
         }
         .about-desc {
