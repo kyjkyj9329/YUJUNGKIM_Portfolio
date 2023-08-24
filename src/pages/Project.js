@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ProjectItem from '../components/ProjectItem';
 import { Link } from 'react-router-dom';
 import { useSearchParams } from "react-router-dom"
+import { ClipLoader } from 'react-spinners';
 
 const projectNav = [
   { display: "all", selected: true, value: "ALL" },
@@ -10,6 +11,7 @@ const projectNav = [
 ]
 
 export const Project = () => {
+  const loading = true;
   const [projectList, setProjectList] = useState([]);
   const [searchParams] = useSearchParams();
   console.log(searchParams)
@@ -41,6 +43,13 @@ export const Project = () => {
     getProject();
   }, [underline]);
 
+  if (loading) {
+    return (
+      <div className="loader">
+        <ClipLoader color="#fff" loading={loading} size={150} />
+      </div>
+    ) 
+  }
   return (
     <div className='Project'>
       <div className='project-container'>

@@ -42,6 +42,9 @@
     svg {
       width: 3rem;
       height: 3rem;
+      &:hover {
+        scale: 1.1;
+      }
     }
   }
 }

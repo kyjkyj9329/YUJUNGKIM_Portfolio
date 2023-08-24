@@ -63,28 +63,5 @@
       "image": "https://i.ibb.co/JzvzTxm/gyeongbokgung.jpg",
       "url": "https://daman-gyeongbokgung.netlify.app/"
     }
-  ],
-  "contact":[
-    {
-      "id": 1,
-      "name": "kyjkyj9329@gmail.com",
-      "image": "https://i.ibb.co/jWg0nG7/pngwing-com-1.png",
-      "icon": "<BsEnvelope />",
-      "url": "mailto:kyjkyj9329@gmail.com"
-    },
-    {
-      "id": 2,
-      "name": "udon__e",
-      "image": "https://i.ibb.co/V2QZrjH/pngwing-2-com.png",
-      "icon": "<BsInstagram />",
-      "url": "https://www.instagram.com/udon__e"
-    },
-    {
-      "id": 3,
-      "name": "github.com/kyjkyj9329",
-      "image": "https://i.ibb.co/D99WGmc/pngwing-com3.png",
-      "icon": "<BsGithub />",
-      "url": "https://github.com/kyjkyj9329"
-    }
   ]
 }

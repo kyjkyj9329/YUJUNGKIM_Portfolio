@@ -7,6 +7,7 @@ const IconComponent = ({icon}) => {
       <span>{icon}</span>
   )
 }
+
 const ProjectItem = ({ item }) => {
 return (
     <div className='project-item'>
