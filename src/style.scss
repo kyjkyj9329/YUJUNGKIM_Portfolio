@@ -15,18 +15,57 @@ a {
   text-decoration: none;
   color: #333;
 }
-
+@keyframes form-entry {
+  0% {
+    height: 0;
+    width: 100px;
+    opacity: 0;
+    padding: 0;
+  }	
+  20% {
+    // height: 0;
+    // border: 1px solid blue;
+    width: 100px;
+    opacity: 1;
+    padding: 0; 
+  }	
+  80% {
+    width: 100%;
+    height: 100%;
+    // border: 6px solid blue; 
+    opacity: 1;
+    padding: 0;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+    
+  }
+}
+@keyframes delayShow {
+  0% {
+    opacity: 0;   
+  }
+  90% {
+    opacity: 0;   
+  }
+  100% {
+    opacity: 1;
+  }
+}
 Body {
   height: 100vh;
   background-color: #333;
   padding: 20px;
 }
 .App {
+  animation: form-entry 1s linear;
   height: calc(100vh - 40px);
   background-color: #fff;
   border-radius: 20px;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 @import "/src/sass/Home.scss";

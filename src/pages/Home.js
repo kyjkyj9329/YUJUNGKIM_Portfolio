@@ -8,8 +8,9 @@ export const Home = () => {
       <div className='home-container'>
         <h1>YUJUNG KIM</h1>
         <div className='sub'>
-          <span>Frontend Developer</span>
-          <span>프론트엔드 개발자 김유정</span>
+          <div><div>Frontend Developer</div></div>
+          <div><div>프론트엔드 개발자 김유정</div></div>
+          <div><div>Welcome to my portfolio!</div></div>
         </div>
         <div className='sns'>
           <a href={ContactData[1].url} target='blank'>

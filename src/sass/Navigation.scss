@@ -1,5 +1,6 @@
 @import "/src/sass/variables";
 .Navigation {
+  // animation: delayShow .5s linear;
   width: $nav-width;
   height: calc(100vh - 40px);
   a {

@@ -1,4 +1,5 @@
 let initialState = {
+  projectList: {},
   loading: true,
 };
 
@@ -9,7 +10,8 @@ function reducer(state = initialState, action) {
       return {...state, loading: true }
     case 'GET_PROJECT_SUCCESS' :
       return { 
-        ...state, 
+        ...state,
+        projectList: payload.projectList,
         loading: false
       };
     case  'GET_PROJECT_FAILURE' : 
