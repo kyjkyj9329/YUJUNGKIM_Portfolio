@@ -8,7 +8,6 @@ const IconComponent = ({icon}) => {
   )
 }
 const ProjectItem = ({ item }) => {
-
 return (
     <div className='project-item'>
       <a href={item.url} target='blank'>

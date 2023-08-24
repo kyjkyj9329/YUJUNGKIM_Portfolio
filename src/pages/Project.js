@@ -14,7 +14,6 @@ export const Project = () => {
   const [projectList, setProjectList] = useState([]);
   const getProject = async () => {
     let url = `https://my-json-server.typicode.com/kyjkyj9329/YUJUNGKIM_Portfolio/project`;
-    // let url = `http://localhost:3001/project`;
     let response = await fetch(url);
     let data = await response.json();
     setProjectList(data);
