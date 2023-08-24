@@ -28,11 +28,3 @@ const ContactData = [
 ]
 
 export default ContactData
-
-// const url = {
-//   instaURL: "https://www.instagram.com/udon__e",
-//   githubURL: "https://github.com/kyjkyj9329",
-//   emailURL: "mailto:kyjkyj9329@gmail.com",
-// }
-
-// export default url;

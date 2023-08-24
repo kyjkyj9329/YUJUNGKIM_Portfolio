@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
-// import { ProjectData } from '../assets/data/projectdata';
 import ProjectItem from '../components/ProjectItem';
 import { Link } from 'react-router-dom';
-import { useLocation, useSearchParams } from "react-router-dom"
+import { useSearchParams } from "react-router-dom"
 
 const projectNav = [
   { display: "all", selected: true, value: "ALL" },
@@ -12,20 +11,22 @@ const projectNav = [
 
 export const Project = () => {
   const [projectList, setProjectList] = useState([]);
+  const [searchParams] = useSearchParams();
+  console.log(searchParams)
+  const display = searchParams.get("display");
   const getProject = async () => {
     let url = `https://my-json-server.typicode.com/kyjkyj9329/YUJUNGKIM_Portfolio/project`;
     let response = await fetch(url);
     let data = await response.json();
-    setProjectList(data);
-    console.log(projectList)
+    if (display === "all")
+    setProjectList(data)
+    if (display === "desktop")
+    setProjectList(data.filter((list) => list.display == "desktop"))
+    if (display === "mobile")
+    setProjectList(data.filter((list) => list.display == "mobile"))
   }
-  useEffect(() => {
-    getProject();
-  }, []);
-  
-  // const [projectList, setProjectList] = useState(ProjectData);
-  const [underline, setUnderline] = useState(projectNav);
 
+  const [underline, setUnderline] = useState(projectNav);
   const clickProjectNav = (value) => {
     const underlined = underline.map((list) => {
       return {
@@ -36,16 +37,9 @@ export const Project = () => {
     setUnderline(underlined);
   };
 
-  const [searchParams] = useSearchParams();
-  const display = searchParams.get("display");
-
   useEffect(() => {
-    // setProjectList(ProjectData);
-    if (display === 'desktop')
-    setProjectList(projectList.filter((data) => data.display == 'desktop'))
-    if (display === 'mobile')
-    setProjectList(projectList.filter((data) => data.display == 'mobile'))
-  }, [display]);
+    getProject();
+  }, [underline]);
 
   return (
     <div className='Project'>

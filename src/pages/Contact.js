@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ContactData from '../assets/data/contactdata'
 import ContactItem from '../components/ContactItem'
 import ContactForm from '../components/ContactForm'
 
 export const Contact = () => {
+  const [contactList, setContactList] = useState([]);
+  const getContact = async () => {
+    let url = `https://my-json-server.typicode.com/kyjkyj9329/YUJUNGKIM_Portfolio/contact`;
+    let response = await fetch(url);
+    let data = await response.json();
+
+    setContactList(data)
+  }
   return (
     <div className='Contact'>
       <div className='contact-container'>
@@ -13,7 +21,7 @@ export const Contact = () => {
             <span>버튼을 클릭하거나 메시지를 남겨주세요!</span>
           </div>
           <div className='contact-list'>
-            {ContactData.map((item) => 
+            {contactList.map((item) => 
               <ContactItem item={item} key={item.id} />
             )}
           </div>
