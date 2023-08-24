@@ -9,7 +9,8 @@ export const Contact = () => {
     let url = `https://my-json-server.typicode.com/kyjkyj9329/YUJUNGKIM_Portfolio/contact`;
     let response = await fetch(url);
     let data = await response.json();
-    setContactList(data)
+    setContactList(data);
+    
   }
   console.log("contactlist", contactList)
   useEffect(() => {
