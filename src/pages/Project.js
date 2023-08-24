@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { ProjectData } from '../assets/data/projectdata';
+// import { ProjectData } from '../assets/data/projectdata';
 import ProjectItem from '../components/ProjectItem';
 import { Link } from 'react-router-dom';
 import { useLocation, useSearchParams } from "react-router-dom"
@@ -13,10 +13,12 @@ const projectNav = [
 export const Project = () => {
   const [projectList, setProjectList] = useState([]);
   const getProject = async () => {
-    let url = `https://my-json-server.typicode.com/kyjkyj9329/YUJUNGKIM_Portfolio/ProjectData`;
+    let url = `https://my-json-server.typicode.com/kyjkyj9329/YUJUNGKIM_Portfolio/project`;
+    // let url = `http://localhost:3001/project`;
     let response = await fetch(url);
     let data = await response.json();
     setProjectList(data);
+    console.log(projectList)
   }
   useEffect(() => {
     getProject();
@@ -39,11 +41,11 @@ export const Project = () => {
   const display = searchParams.get("display");
 
   useEffect(() => {
-    setProjectList(ProjectData);
+    // setProjectList(ProjectData);
     if (display === 'desktop')
-    setProjectList(ProjectData.filter((data) => data.display == 'desktop'))
+    setProjectList(projectList.filter((data) => data.display == 'desktop'))
     if (display === 'mobile')
-    setProjectList(ProjectData.filter((data) => data.display == 'mobile'))
+    setProjectList(projectList.filter((data) => data.display == 'mobile'))
   }, [display]);
 
   return (
