@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ContactData from '../assets/data/contactdata'
 import ContactItem from '../components/ContactItem'
 import ContactForm from '../components/ContactForm'
@@ -12,6 +12,9 @@ export const Contact = () => {
 
     setContactList(data)
   }
+  useEffect(() => {
+    getContact();
+  }, [])
   return (
     <div className='Contact'>
       <div className='contact-container'>
