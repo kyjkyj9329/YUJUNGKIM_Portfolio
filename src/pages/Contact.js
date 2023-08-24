@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ContactData from '../assets/data/contactdata'
+// import ContactData from '../assets/data/contactdata'
 import ContactItem from '../components/ContactItem'
 import ContactForm from '../components/ContactForm'
 
@@ -9,9 +9,9 @@ export const Contact = () => {
     let url = `https://my-json-server.typicode.com/kyjkyj9329/YUJUNGKIM_Portfolio/contact`;
     let response = await fetch(url);
     let data = await response.json();
-
     setContactList(data)
   }
+  console.log("contactlist", contactList)
   useEffect(() => {
     getContact();
   }, [])
