@@ -16,10 +16,10 @@ export const Project = () => {
     let url = `https://my-json-server.typicode.com/kyjkyj9329/YUJUNGKIM_Portfolio/ProjectData`;
     let response = await fetch(url);
     let data = await response.json();
-    setProductList(data);
+    setProjectList(data);
   }
   useEffect(() => {
-    getProduct();
+    getProject();
   }, []);
   
   // const [projectList, setProjectList] = useState(ProjectData);
