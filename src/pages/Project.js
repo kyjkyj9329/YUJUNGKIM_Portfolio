@@ -11,8 +11,18 @@ const projectNav = [
 ]
 
 export const Project = () => {
+  const [projectList, setProjectList] = useState([]);
+  const getProject = async () => {
+    let url = `https://my-json-server.typicode.com/kyjkyj9329/YUJUNGKIM_Portfolio/ProjectData`;
+    let response = await fetch(url);
+    let data = await response.json();
+    setProductList(data);
+  }
+  useEffect(() => {
+    getProduct();
+  }, []);
   
-  const [projectList, setProjectList] = useState(ProjectData);
+  // const [projectList, setProjectList] = useState(ProjectData);
   const [underline, setUnderline] = useState(projectNav);
 
   const clickProjectNav = (value) => {
