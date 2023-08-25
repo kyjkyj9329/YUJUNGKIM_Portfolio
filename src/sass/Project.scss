@@ -1,7 +1,7 @@
 @import "/src/sass/variables";
 .Project {
   width: calc(100% - $nav-width);
-  background-color: #fff;
+  background-color: var(--color-white);
   z-index: 5;
   border-radius: 20px 0 0 20px;
   box-shadow: 4px 12px 30px 6px rgba(106, 36, 36, 0.1);
