@@ -10,17 +10,8 @@
       "url": ""
     },
     {
-      "id": 2,
-      "display": "desktop",
-      "title": "감정일기",
-      "skills": ["typescript", "react"],
-      "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "지역 기반 마커 클러스터링 구현"],
-      "image": "https://i.ibb.co/hMZ3dPk/emotiondiary.jpg",
-      "url": ""
-    },
-    {
       "id": 3,
-      "display": "desktop",
+      "display": ["desktop", "mobile"],
       "title": "ACNE STUDIO",
       "skills": ["react", "json"],
       "desc": ["json 서버 구축 및 데이터 호출", "로그인 시에만 상품 상세페이지 접속 가능 기능 구현"],
@@ -41,13 +32,13 @@
       "display": "desktop",
       "title": "[팀 프로젝트] 경복궁 웹 사이트",
       "skills": ["html", "css", "javascript"],
-      "desc": ["웹 스토리지에 예약 데이터 저장 및 호출 기능", "로그인 및 예약 시 유효성 검사 기능 구현", "미디어쿼리를 이용한 반응형/적응형 구현"],
+      "desc": ["웹 스토리지에 예약 데이터 저장 및 호출 기능", "로그인 및 예약 시 유효성 검사 기능 구현"],
       "image": "https://i.ibb.co/JzvzTxm/gyeongbokgung.jpg",
       "url": "https://daman-gyeongbokgung.netlify.app/"
     },
     {
       "id": 6,
-      "display": "mobile",
+      "display": "desktop",
       "title": "싸이월드 클론코딩",
       "skills": ["html", "css", "javascript"],
       "desc": ["자바스크립트를 이용한 끝말잇기 & 로또 게임 기능 구현", ""],
@@ -59,7 +50,16 @@
       "display": "mobile",
       "title": "모바일 밀키트 사이트",
       "skills": ["html", "css", "javascript"],
-      "desc": ["자바스크립트를 이용한 끝말잇기 & 로또 게임 기능 구현", "피그마를 통한 레이아웃 구상 및 설계"],
+      "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "피그마를 통한 레이아웃 구상 및 설계"],
+      "image": "https://i.ibb.co/gyj3p4h/mealkit.jpg",
+      "url": "https://kyjkyj9329-mealkit.netlify.app/"
+    },
+    {
+      "id": 8,
+      "display": "mobile",
+      "title": "1차 포트폴리오",
+      "skills": ["html", "css", "javascript"],
+      "desc": [""],
       "image": "https://i.ibb.co/gyj3p4h/mealkit.jpg",
       "url": "https://kyjkyj9329-mealkit.netlify.app/"
     }
