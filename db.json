@@ -50,18 +50,18 @@
       "display": "mobile",
       "title": "싸이월드 클론코딩",
       "skills": ["html", "css", "javascript"],
-      "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "사용자 지정 CSS 속성(변수) 사용"],
-      "image": "https://i.ibb.co/pQDfF0F/cyworld.jpg",
+      "desc": ["자바스크립트를 이용한 끝말잇기 & 로또 게임 기능 구현", ""],
+      "image": "https://i.ibb.co/rQ74Nz3/cyworld.jpg",
       "url": "https://kyjkyj9329-cyworld.netlify.app/"
     },
     {
       "id": 7,
       "display": "mobile",
-      "title": "밀키트 모바일 사이트",
-      "skills": ["html", "css"],
-      "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "사용자 지정 CSS 속성(변수) 사용"],
-      "image": "https://i.ibb.co/JzvzTxm/gyeongbokgung.jpg",
-      "url": "https://daman-gyeongbokgung.netlify.app/"
+      "title": "모바일 밀키트 사이트",
+      "skills": ["html", "css", "javascript"],
+      "desc": ["자바스크립트를 이용한 끝말잇기 & 로또 게임 기능 구현", "피그마를 통한 레이아웃 구상 및 설계"],
+      "image": "https://i.ibb.co/gyj3p4h/mealkit.jpg",
+      "url": "https://kyjkyj9329-mealkit.netlify.app/"
     }
   ]
 }
