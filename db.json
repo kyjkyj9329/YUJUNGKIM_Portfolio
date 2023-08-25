@@ -5,7 +5,7 @@
       "display": "desktop",
       "title": "TVING",
       "skills": ["css", "react", "redux", "styledcomponents"],
-      "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "지역 기반 마커 클러스터링 구현"],
+      "desc": ["Redux를 통한 전역 상태 관리 및 성능 최적화", "영화 API 요청을 위한 Axios 인스턴스 생성 및 요청 전송"],
       "image": "https://i.ibb.co/55tJp1V/netflix.jpg",
       "url": ""
     },
@@ -32,7 +32,7 @@
       "display": "desktop",
       "title": "퍼스널컬러 테스트",
       "skills": ["react", "styledcomponents"],
-      "desc": ["스타일컴포넌트", "리액트 라우터를 통한 싱글 페이지 어플리케이션 제작"],
+      "desc": ["스타일 컴포넌트", "리액트 라우터를 통한 싱글 페이지 어플리케이션 제작"],
       "image": "https://i.ibb.co/6Fp7s9y/Desktop-1.png",
       "url": "https://kyjkyj9329-mbti-test.netlify.app"
     },
@@ -41,25 +41,25 @@
       "display": "desktop",
       "title": "[팀 프로젝트] 경복궁 웹 사이트",
       "skills": ["html", "css", "javascript"],
-      "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "지역 기반 마커 클러스터링 구현"],
-      "image": "https://i.ibb.co/JzvzTxm/gyeongbokgung.jpg",
+      "desc": ["웹 스토리지에 예약 데이터 저장 및 호출 기능", "로그인 및 예약 시 유효성 검사 기능 구현", "미디어쿼리를 이용한 반응형/적응형 구현"],
+      "image": "https://i.ibb.co/tXP6Cc0/Desktop-1-2.png",
       "url": "https://daman-gyeongbokgung.netlify.app/"
     },
     {
       "id": 6,
       "display": "mobile",
-      "title": "밀키트 모바일 사이트",
+      "title": "싸이월드 클론코딩",
       "skills": ["html", "css"],
       "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "사용자 지정 CSS 속성(변수) 사용"],
-      "image": "https://i.ibb.co/JzvzTxm/gyeongbokgung.jpg",
+      "image": "https://i.ibb.co/pQDfF0F/cyworld.jpg",
       "url": "https://daman-gyeongbokgung.netlify.app/"
     },
     {
       "id": 7,
       "display": "mobile",
-      "title": "TVING",
-      "skills": ["css", "react", "redux", "styledcomponents"],
-      "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "지역 기반 마커 클러스터링 구현"],
+      "title": "밀키트 모바일 사이트",
+      "skills": ["html", "css"],
+      "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "사용자 지정 CSS 속성(변수) 사용"],
       "image": "https://i.ibb.co/JzvzTxm/gyeongbokgung.jpg",
       "url": "https://daman-gyeongbokgung.netlify.app/"
     }
