@@ -25,7 +25,7 @@ export const Project = () => {
     // if (display === "all")
     setProjectList(data)
     if (display === "desktop")
-    setProjectList(data.filter((list) => list.display == "desktop"))
+    setProjectList(data.filter((list) => list.display.includes("desktop")))
     if (display === "mobile")
     setProjectList(data.filter((list) => list.display.includes("mobile")))
   }

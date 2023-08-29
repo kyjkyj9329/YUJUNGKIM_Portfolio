@@ -56,7 +56,7 @@
     },
     {
       "id": 8,
-      "display": "mobile",
+      "display": ["desktop", "mobile"]
       "title": "1차 포트폴리오",
       "skills": ["html", "css", "javascript"],
       "desc": [""],
