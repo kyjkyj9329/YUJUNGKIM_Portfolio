@@ -13,16 +13,18 @@ export const About = () => {
       <div className='about-container'>
         <div className='about-main'>
           <div className='about-profile'>
-            <img src={image1} width={100}/>
-            <div className='profile-content'>
-              {ContactData.map((data) => 
-                <div key={data.id}>
-                  {data.icon}
-                  <a href={data.url}>
-                    {data.name}
-                  </a>
-                </div>
-              )}
+            <div className='about-profile-inner'>
+              <img src={image1} width={100}/>
+              <div className='profile-content'>
+                {ContactData.map((data) => 
+                  <div key={data.id}>
+                    {data.icon}
+                    <a href={data.url}>
+                      {data.name}
+                    </a>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
           <div className='about-desc'>

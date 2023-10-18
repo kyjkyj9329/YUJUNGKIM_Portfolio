@@ -11,7 +11,7 @@ const IconComponent = ({icon}) => {
 const ProjectItem = ({ item }) => {
 return (
     <div className='project-item'>
-      <a href={item.url} target='blank'>
+      <a href={item.url} target='_blank'>
         <img src={item.image} />
         <BsFillArrowUpRightCircleFill />
       </a>
