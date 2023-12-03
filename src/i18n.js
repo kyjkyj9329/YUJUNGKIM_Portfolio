@@ -1,137 +1,36 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+// import i18n from 'i18next';
+// import { initReactI18next } from 'react-i18next';
 
-const resources = {
-  en: {
-    translation: {
-      project: [
-        // English translations for project data
-        {
-          "id": 1,
-          "display": "desktop",
-          "title": "1차 포트폴리오",
-          "skills": ["html", "css", "javascript"],
-          "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "피그마를 통한 레이아웃 구상 및 설계"],
-          "image": "https://i.ibb.co/YQ369jD/portfolio02.png",
-          "url": "https://kyjkyj9329-1stportfolio.netlify.app/"
-        },
-        {
-          "id": 2,
-          "display": "desktop",
-          "title": "고양이 MBTI 테스트",
-          "skills": ["javascript", "react", "styledcomponents"],
-          "desc": ["리액트 라우터를 통한 싱글 페이지 어플리케이션 제작", "스타일 컴포넌트를 통해 작업 기간 최소화"],
-          "image": "https://i.ibb.co/Jqj3X6W/2023-10-19-181417.png",
-          "url": "https://kyjkyj9329-mbti-test.netlify.app"
-        },
-        {
-          "id": 3,
-          "display": ["desktop", "mobile"],
-          "title": "ACNE STUDIO",
-          "skills": ["javascript", "react", "json"],
-          "desc": ["json 서버 구축 및 데이터 호출", "로그인 시에만 상품 상세페이지 접속 가능 기능 구현"],
-          "image": "https://i.ibb.co/ZJ5Gbtq/acnestudio.jpg",
-          "url": "https://kyjkyj9329-acnestudios.netlify.app/"
-        },
-        {
-          "id": 4,
-          "display": "desktop",
-          "title": "[팀 프로젝트] 경복궁 웹 사이트",
-          "skills": ["html", "css", "javascript"],
-          "desc": ["웹 스토리지에 예약 데이터 저장 및 호출 기능", "로그인 및 예약 시 유효성 검사 기능 구현"],
-          "image": "https://i.ibb.co/JzvzTxm/gyeongbokgung.jpg",
-          "url": "https://daman-gyeongbokgung.netlify.app/"
-        },
-        {
-          "id": 5,
-          "display": "desktop",
-          "title": "싸이월드 클론코딩",
-          "skills": ["html", "css", "javascript"],
-          "desc": ["자바스크립트를 이용한 끝말잇기 & 로또 게임 기능 구현", ""],
-          "image": "https://i.ibb.co/rQ74Nz3/cyworld.jpg",
-          "url": "https://kyjkyj9329-cyworld.netlify.app/"
-        },
-        {
-          "id": 6,
-          "display": "mobile",
-          "title": "모바일 밀키트 사이트",
-          "skills": ["html", "css", "javascript"],
-          "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "피그마를 통한 레이아웃 구상 및 설계"],
-          "image": "https://i.ibb.co/gyj3p4h/mealkit.jpg",
-          "url": "https://kyjkyj9329-mealkit.netlify.app/"
-        }
-      ],
-    },
-  },
-  ko: {
-    translation: {
-      project: [
-        // Korean translations for project data
-        {
-          "id": 1,
-          "display": "desktop",
-          "title": "1차 포트폴리오",
-          "skills": ["html", "css", "javascript"],
-          "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "피그마를 통한 레이아웃 구상 및 설계"],
-          "image": "https://i.ibb.co/YQ369jD/portfolio02.png",
-          "url": "https://kyjkyj9329-1stportfolio.netlify.app/"
-        },
-        {
-          "id": 2,
-          "display": "desktop",
-          "title": "고양이 MBTI 테스트",
-          "skills": ["javascript", "react", "styledcomponents"],
-          "desc": ["리액트 라우터를 통한 싱글 페이지 어플리케이션 제작", "스타일 컴포넌트를 통해 작업 기간 최소화"],
-          "image": "https://i.postimg.cc/Bb16ZJJp/catmbti.jpg",
-          "url": "https://kyjkyj9329-mbti-test.netlify.app"
-        },
-        {
-          "id": 3,
-          "display": ["desktop", "mobile"],
-          "title": "ACNE STUDIO",
-          "skills": ["javascript", "react", "json"],
-          "desc": ["json 서버 구축 및 데이터 호출", "로그인 시에만 상품 상세페이지 접속 가능 기능 구현"],
-          "image": "https://i.postimg.cc/PNsqP0xj/acnestudio.jpg",
-          "url": "https://kyjkyj9329-acnestudios.netlify.app/"
-        },
-        {
-          "id": 4,
-          "display": "desktop",
-          "title": "[팀 프로젝트] 경복궁 웹 사이트",
-          "skills": ["html", "css", "javascript"],
-          "desc": ["웹 스토리지에 예약 데이터 저장 및 호출 기능", "로그인 및 예약 시 유효성 검사 기능 구현"],
-          "image": "https://i.postimg.cc/tJLsFYB8/gyeongbokgung.jpg",
-          "url": "https://daman-gyeongbokgung.netlify.app/"
-        },
-        {
-          "id": 5,
-          "display": "desktop",
-          "title": "싸이월드 클론코딩",
-          "skills": ["html", "css", "javascript"],
-          "desc": ["자바스크립트를 이용한 끝말잇기 & 로또 게임 기능 구현", ""],
-          "image": "https://i.postimg.cc/HxnnKQKf/cyworld.jpg",
-          "url": "https://kyjkyj9329-cyworld.netlify.app/"
-        },
-        {
-          "id": 6,
-          "display": "mobile",
-          "title": "모바일 밀키트 사이트",
-          "skills": ["html", "css", "javascript"],
-          "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "피그마를 통한 레이아웃 구상 및 설계"],
-          "image": "https://i.ibb.co/gyj3p4h/mealkit.jpg",
-          "url": "https://kyjkyj9329-mealkit.netlify.app/"
-        }
-      ],
-    },
-  },
-};
+// const loadProjects = async (lang) => {
+//   try {
+//     const response = await fetch(`../db.json`);
+//     const data = await response.json();
+//     return data.project;
+//   } catch (error) {
+//     console.error('프로젝트 로딩 중 오류 발생:', error);
+//     return [];
+//   }
+// };
 
-i18n.use(initReactI18next).init({
-  resources,
-  lng: 'ko', // Default language
-  interpolation: {
-    escapeValue: false, // React already escapes by default
-  },
-});
+// const resources = {
+//   ko: {
+//     translation: {
+//       project: await loadProjects('ko'),
+//     },
+//   },
+//   en: {
+//     translation: {
+//       project: await loadProjects('en'),
+//     },
+//   },
+// };
 
-export default i18n;
+// i18n.use(initReactI18next).init({
+//   resources,
+//   lng: 'ko', // Default language
+//   interpolation: {
+//     escapeValue: false, // React already escapes by default
+//   },
+// });
+
+// export default i18n;
