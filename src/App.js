@@ -5,8 +5,10 @@ import { About } from './pages/About';
 import { Project } from './pages/Project';
 import { Contact } from './pages/Contact';
 import { Navigation } from './components/Navigation';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+
   return (
     <div className="App">
       <Routes>

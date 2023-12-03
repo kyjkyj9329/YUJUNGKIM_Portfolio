@@ -1,47 +1,31 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-// import Backend from 'i18next-http-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
-// don't want to use this?
-// have a look at the Quick start guide 
-// for passing in lng and translations on init
+const resources = {
+  en: {
+    translation: {
+      home: 'Home',
+      about: 'About',
+      project: 'Project',
+      contact: 'Contact',
+    },
+  },
+  ko: {
+    translation: {
+      home: '홈',
+      about: '소개',
+      project: '프로젝트',
+      contact: '연락',
+    },
+  },
+};
 
-i18n
-  // load translation using http -> see /public/locales (i.e. https://github.com/i18next/react-i18next/tree/master/example/react/public/locales)
-  // learn more: https://github.com/i18next/i18next-http-backend
-  // want your translations to be loaded from a professional CDN? => https://github.com/locize/react-tutorial#step-2---use-the-locize-cdn
-  // .use(Backend)
-  // detect user language
-  // learn more: https://github.com/i18next/i18next-browser-languageDetector
-  .use(LanguageDetector)
-  // pass the i18n instance to react-i18next.
-  .use(initReactI18next)
-  // init i18next
-  // for all options read: https://www.i18next.com/overview/configuration-options
-  .init({
-    fallbackLng: 'en',
-    // debug: true,
-    resources: {
-      en: {
-        translation: {
-          greeting: {
-            hello: "Hello World"
-          }
-        }
-      },
-      kr: {
-        translation: {
-          greeting: {
-            hello: "안녕하세요"
-          }
-        }
-      }
-    }
-    // interpolation: {
-    //   escapeValue: false, // not needed for react as it escapes by default
-    // }
-  });
-
+i18n.use(initReactI18next).init({
+  resources,
+  lng: 'ko', // 기본 언어 설정
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 export default i18n;
