@@ -22,6 +22,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <div>
+        <p>{i18n.language}</p>
         <button button onClick={() => changeLanguage('ko')}>한국어</button>
         <button onClick={() => changeLanguage('en')}>English</button>
         <Navigation />

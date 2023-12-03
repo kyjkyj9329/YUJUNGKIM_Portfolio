@@ -5,6 +5,7 @@ import { ClipLoader } from 'react-spinners';
 import { useTranslation } from 'react-i18next';
 import i18n from '../locales/i18n';
 import translationKO from "../locales/ko/translation.json"
+import translationEN from "../locales/en/translation.json"
 
 const projectNav = [
   { display: "all", selected: true, value: "ALL" },
@@ -22,13 +23,31 @@ const Project = () => {
     // let url = `http://localhost:3004/project`;
     // let response = await fetch(url);
     // let data = await response.json();
-    let data = translationKO;
-    if (display === "all") {
-      setProjectList(data);
-      console.log(projectList)
-    }
-    if (display === "desktop") setProjectList(data.filter((list) => list.display.includes("desktop")));
-    if (display === "mobile") setProjectList(data.filter((list) => list.display.includes("mobile")));
+    let data = Object.keys(translationKO.project).map(key => {
+      return {
+        id: key,
+        ...translationKO.project[key]
+      };
+    });
+    let dataEN = translationEN;
+    console.log(data);
+
+    // if (display === "all") {
+    //   setProjectList(data);
+    //   console.log(projectList)
+    // }
+    // if (display === "mobile") setProjectList(data.filter((list) => list.display.includes("mobile")));
+    // if (display === "desktop") setProjectList(data.filter((list) => list.display.includes("desktop")));
+
+    if (display === "all" && i18n.language == "ko") setProjectList(data.filter((list) => list.display.includes("desktop")));
+    else if (display === "all" && i18n.language == "en")
+    setProjectList(dataEN.filter((list) => list.display.includes("desktop")));
+    else if (display === "desktop" && i18n.language == "ko") setProjectList(data.filter((list) => list.display.includes("desktop")));
+    else if (display === "desktop" && i18n.language == "en")
+    setProjectList(dataEN.filter((list) => list.display.includes("desktop")));
+    else if (display === "mobile" && i18n.language == "ko") setProjectList(data.filter((list) => list.display.includes("desktop")));
+    else if (display === "mobile" && i18n.language == "en")
+    setProjectList(dataEN.filter((list) => list.display.includes("desktop")));
   };
 
   const [underline, setUnderline] = useState(projectNav);
