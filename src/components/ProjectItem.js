@@ -30,8 +30,8 @@ const ProjectItem = ({ item }) => {
           </div>
         </div>
         <div className='item-desc'>
-          {item.desc.map((it, index) => (
-            <span key={index}>{it}</span>
+          {item.desc.map((descItem, index) => (
+            <span key={index}>{t(`project.${item.id}.desc.${index}`)}</span>
           ))}
         </div>
       </div>

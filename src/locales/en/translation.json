@@ -2,19 +2,51 @@
   "project": {
     "1": {
       "display": "desktop",
-      "title": "translation.json 영어",
+      "title": "1st Portfolio",
       "skills": ["html", "css", "javascript"],
-      "desc": ["미디어쿼리를 이용한 반응형/적응형 구현", "피그마를 통한 레이아웃 구상 및 설계"],
+      "desc": ["Implementing responsive design using media queries", "Sketching and designing layouts through Figma"],
       "image": "https://i.ibb.co/YQ369jD/portfolio02.png",
       "url": "https://kyjkyj9329-1stportfolio.netlify.app/"
     },
     "2": {
       "display": "desktop",
-      "title": "고양이 MBTI 테스트",
-      "skills": ["javascript", "react", "styledcomponents"],
-      "desc": ["리액트 라우터를 통한 싱글 페이지 어플리케이션 제작", "스타일 컴포넌트를 통해 작업 기간 최소화"],
+      "title": "Cat MBTI Test",
+      "skills": ["javascript", "react", "styled-components"],
+      "desc": ["Creating a Single Page Application with React Router", "Minimizing Work Duration with Styled Components"],
       "image": "https://i.postimg.cc/Bb16ZJJp/catmbti.jpg",
       "url": "https://kyjkyj9329-mbti-test.netlify.app"
+    },
+    "3": {
+      "display": ["desktop", "mobile"],
+      "title": "ACNE STUDIO",
+      "skills": ["javascript", "react", "json"],
+      "desc": ["Setting up a JSON Server and Making Data Requests", "Implementing Access to Product Details Only Upon Login"],
+      "image": "https://i.ibb.co/ZJ5Gbtq/acnestudio.jpg",
+      "url": "https://kyjkyj9329-acnestudios.netlify.app/"
+    },
+    "4": {
+      "display": "desktop",
+      "title": "[Team Project] Gyeongbokgung Website",
+      "skills": ["html", "css", "javascript"],
+      "desc": ["Storing and Retrieving Reservation Data in Web Storage", "Implementing Validation for Login and Reservation"],
+      "image": "https://i.ibb.co/JzvzTxm/gyeongbokgung.jpg",
+      "url": "https://daman-gyeongbokgung.netlify.app/"
+    },
+    "5": {
+      "display": "desktop",
+      "title": "Cyworld Clone",
+      "skills": ["html", "css", "javascript"],
+      "desc": ["Implementing features like JavaScript word chain & lotto games", ""],
+      "image": "https://i.ibb.co/rQ74Nz3/cyworld.jpg"
+    },
+    "6": {
+      "id": 6,
+      "display": "mobile",
+      "title": "Mobile Meal Kit Site",
+      "skills": ["html", "css", "javascript"],
+      "desc": ["Implementing responsive design using media queries", "Sketching and designing layouts through Figma"],
+      "image": "https://i.ibb.co/gyj3p4h/mealkit.jpg",
+      "url": "https://kyjkyj9329-mealkit.netlify.app/"
     }
   }
 }

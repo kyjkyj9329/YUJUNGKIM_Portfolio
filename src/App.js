@@ -21,10 +21,12 @@ function App() {
         <Route path='/project' element={<Project />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
-      <div>
-        <p>{i18n.language}</p>
-        <button button onClick={() => changeLanguage('ko')}>한국어</button>
-        <button onClick={() => changeLanguage('en')}>English</button>
+      <div className='Navbar'>
+        <div className='lng-btn'>
+          {/* <span>{i18n.language}</span> */}
+          <button button onClick={() => changeLanguage('ko')}>한국어</button>
+          <button onClick={() => changeLanguage('en')}>English</button>
+        </div>
         <Navigation />
       </div>
     </div>

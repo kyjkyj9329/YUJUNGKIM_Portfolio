@@ -1,8 +1,29 @@
 @import "/src/sass/variables";
-.Navigation {
+.Navbar {
   // animation: delayShow .5s linear;
   width: $nav-width;
   height: calc(100vh - 40px);
+  .lng-btn {
+    // border: 1px solid red;
+    position: fixed;
+    top: 0px;
+    right: 50px;
+    z-index: 999;
+    button {
+      border: none;
+      background-color: #999;
+      color: #fff;
+      width: 50px;
+      height: 20px;
+      line-height: 20px;
+      // border-radius: 5px;
+      cursor: pointer;
+      // margin-right: 10px;
+      &:hover {
+        background-color: skyblue;
+      }
+    }
+  }
   a {
     width: $nav-width;
     /* padding-bottom: 40px; */
